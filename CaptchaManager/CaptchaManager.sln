@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptchaManager", "CaptchaManager\CaptchaManager.csproj", "{69607163-1922-44FD-9A23-D698550C2A6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptchaManager.Tests", "CaptchaManager.Tests\CaptchaManager.Tests.csproj", "{DAD5D000-66A6-4933-9609-B6400FEF3645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptchaManager.DataAccess", "CaptchaManager.DataAccess\CaptchaManager.DataAccess.csproj", "{AAB1D4CB-AF4D-4FEB-81C9-378857456D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69607163-1922-44FD-9A23-D698550C2A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69607163-1922-44FD-9A23-D698550C2A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69607163-1922-44FD-9A23-D698550C2A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69607163-1922-44FD-9A23-D698550C2A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD5D000-66A6-4933-9609-B6400FEF3645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD5D000-66A6-4933-9609-B6400FEF3645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD5D000-66A6-4933-9609-B6400FEF3645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD5D000-66A6-4933-9609-B6400FEF3645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB1D4CB-AF4D-4FEB-81C9-378857456D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB1D4CB-AF4D-4FEB-81C9-378857456D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB1D4CB-AF4D-4FEB-81C9-378857456D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB1D4CB-AF4D-4FEB-81C9-378857456D90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

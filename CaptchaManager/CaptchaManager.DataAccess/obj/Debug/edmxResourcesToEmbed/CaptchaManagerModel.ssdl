@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CaptchaManagerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CaptchaManagerModelStoreContainer">
+    <EntitySet Name="captchas" EntityType="CaptchaManagerModel.Store.captchas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="imagesComplex" EntityType="CaptchaManagerModel.Store.imagesComplex" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="imagesFormat" EntityType="CaptchaManagerModel.Store.imagesFormat" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="soundsFormat" EntityType="CaptchaManagerModel.Store.soundsFormat" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users" EntityType="CaptchaManagerModel.Store.users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="fk_captchas_imagesComplexId" Association="CaptchaManagerModel.Store.fk_captchas_imagesComplexId">
+      <End Role="imagesComplex" EntitySet="imagesComplex" />
+      <End Role="captchas" EntitySet="captchas" />
+    </AssociationSet>
+    <AssociationSet Name="fk_captchas_imagesFormatId" Association="CaptchaManagerModel.Store.fk_captchas_imagesFormatId">
+      <End Role="imagesFormat" EntitySet="imagesFormat" />
+      <End Role="captchas" EntitySet="captchas" />
+    </AssociationSet>
+    <AssociationSet Name="fk_captchas_soundsFormatId" Association="CaptchaManagerModel.Store.fk_captchas_soundsFormatId">
+      <End Role="soundsFormat" EntitySet="soundsFormat" />
+      <End Role="captchas" EntitySet="captchas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="captchas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="image" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="sound" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="soundFormat" Type="int" />
+    <Property Name="imageFormat" Type="int" />
+    <Property Name="imageComplex" Type="int" />
+  </EntityType>
+  <EntityType Name="imagesComplex">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="imagesFormat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="soundsFormat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="serial" Type="varchar" MaxLength="50" />
+    <Property Name="type" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="fk_captchas_imagesComplexId">
+    <End Role="imagesComplex" Type="CaptchaManagerModel.Store.imagesComplex" Multiplicity="0..1" />
+    <End Role="captchas" Type="CaptchaManagerModel.Store.captchas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="imagesComplex">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="captchas">
+        <PropertyRef Name="imageComplex" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_captchas_imagesFormatId">
+    <End Role="imagesFormat" Type="CaptchaManagerModel.Store.imagesFormat" Multiplicity="0..1" />
+    <End Role="captchas" Type="CaptchaManagerModel.Store.captchas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="imagesFormat">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="captchas">
+        <PropertyRef Name="imageFormat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_captchas_soundsFormatId">
+    <End Role="soundsFormat" Type="CaptchaManagerModel.Store.soundsFormat" Multiplicity="0..1" />
+    <End Role="captchas" Type="CaptchaManagerModel.Store.captchas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="soundsFormat">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="captchas">
+        <PropertyRef Name="soundFormat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

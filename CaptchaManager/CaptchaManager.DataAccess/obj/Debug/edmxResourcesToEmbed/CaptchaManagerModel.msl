@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CaptchaManagerModelStoreContainer" CdmEntityContainer="CaptchaManagerEntities">
+    <EntitySetMapping Name="captchas">
+      <EntityTypeMapping TypeName="CaptchaManagerModel.captchas">
+        <MappingFragment StoreEntitySet="captchas">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="sound" ColumnName="sound" />
+          <ScalarProperty Name="soundFormat" ColumnName="soundFormat" />
+          <ScalarProperty Name="imageFormat" ColumnName="imageFormat" />
+          <ScalarProperty Name="imageComplex" ColumnName="imageComplex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="imagesComplex">
+      <EntityTypeMapping TypeName="CaptchaManagerModel.imagesComplex">
+        <MappingFragment StoreEntitySet="imagesComplex">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="imagesFormat">
+      <EntityTypeMapping TypeName="CaptchaManagerModel.imagesFormat">
+        <MappingFragment StoreEntitySet="imagesFormat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="soundsFormat">
+      <EntityTypeMapping TypeName="CaptchaManagerModel.soundsFormat">
+        <MappingFragment StoreEntitySet="soundsFormat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="CaptchaManagerModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="serial" ColumnName="serial" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
