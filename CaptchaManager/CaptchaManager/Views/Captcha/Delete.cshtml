@@ -1,0 +1,53 @@
+﻿@model CaptchaManager.DataAccess.captchas
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>captchas</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.image)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.image)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.sound)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.sound)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.soundsFormat.description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.soundsFormat.description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.imagesFormat.description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.imagesFormat.description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.imagesComplex.description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.imagesComplex.description)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

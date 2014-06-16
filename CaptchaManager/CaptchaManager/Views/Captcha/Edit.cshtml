@@ -1,0 +1,69 @@
+﻿@model CaptchaManager.DataAccess.captchas
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>captchas</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.image)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.image)
+            @Html.ValidationMessageFor(model => model.image)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.sound)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.sound)
+            @Html.ValidationMessageFor(model => model.sound)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.soundFormat, "soundsFormat")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("soundFormat", String.Empty)
+            @Html.ValidationMessageFor(model => model.soundFormat)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.imageFormat, "imagesFormat")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("imageFormat", String.Empty)
+            @Html.ValidationMessageFor(model => model.imageFormat)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.imageComplex, "imagesComplex")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("imageComplex", String.Empty)
+            @Html.ValidationMessageFor(model => model.imageComplex)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

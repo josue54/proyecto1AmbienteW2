@@ -34,21 +34,21 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="description" Type="varchar" Nullable="false" MaxLength="50" />
   </EntityType>
   <EntityType Name="imagesFormat">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="description" Type="varchar" Nullable="false" MaxLength="50" />
   </EntityType>
   <EntityType Name="soundsFormat">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="description" Type="varchar" Nullable="false" MaxLength="50" />
   </EntityType>
   <EntityType Name="users">

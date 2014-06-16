@@ -162,7 +162,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CaptchaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImageComplexController.cs" />
+    <Compile Include="Controllers\ImageFormatController.cs" />
+    <Compile Include="Controllers\SoundFormatController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -287,6 +291,26 @@
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\User\Delete.cshtml" />
+    <Content Include="Views\SoundFormat\Index.cshtml" />
+    <Content Include="Views\SoundFormat\Details.cshtml" />
+    <Content Include="Views\SoundFormat\Create.cshtml" />
+    <Content Include="Views\SoundFormat\Edit.cshtml" />
+    <Content Include="Views\SoundFormat\Delete.cshtml" />
+    <Content Include="Views\ImageFormat\Index.cshtml" />
+    <Content Include="Views\ImageFormat\Details.cshtml" />
+    <Content Include="Views\ImageFormat\Create.cshtml" />
+    <Content Include="Views\ImageFormat\Edit.cshtml" />
+    <Content Include="Views\ImageFormat\Delete.cshtml" />
+    <Content Include="Views\ImageComplex\Index.cshtml" />
+    <Content Include="Views\ImageComplex\Details.cshtml" />
+    <Content Include="Views\ImageComplex\Create.cshtml" />
+    <Content Include="Views\ImageComplex\Edit.cshtml" />
+    <Content Include="Views\ImageComplex\Delete.cshtml" />
+    <Content Include="Views\Captcha\Index.cshtml" />
+    <Content Include="Views\Captcha\Details.cshtml" />
+    <Content Include="Views\Captcha\Create.cshtml" />
+    <Content Include="Views\Captcha\Edit.cshtml" />
+    <Content Include="Views\Captcha\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

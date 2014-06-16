@@ -7,3 +7,12 @@ C:\Users\Josue R\Documents\GitHub\proyecto1ambienteweb2\CaptchaManager\CaptchaMa
 C:\Users\Josue R\Documents\GitHub\proyecto1ambienteweb2\CaptchaManager\CaptchaManager.DataAccess\obj\Debug\CaptchaManager.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\Josue R\Documents\GitHub\proyecto1ambienteweb2\CaptchaManager\CaptchaManager.DataAccess\obj\Debug\CaptchaManager.DataAccess.dll
 C:\Users\Josue R\Documents\GitHub\proyecto1ambienteweb2\CaptchaManager\CaptchaManager.DataAccess\obj\Debug\CaptchaManager.DataAccess.pdb
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\bin\Debug\CaptchaManager.DataAccess.dll.config
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\bin\Debug\CaptchaManager.DataAccess.dll
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\bin\Debug\CaptchaManager.DataAccess.pdb
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\obj\Debug\CaptchaManager.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\obj\Debug\CaptchaManager.DataAccess.dll
+C:\Users\Josue R\Documents\GitHub\proyecto1AmbienteW2\CaptchaManager\CaptchaManager.DataAccess\obj\Debug\CaptchaManager.DataAccess.pdb
