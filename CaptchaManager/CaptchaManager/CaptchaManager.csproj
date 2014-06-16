@@ -168,11 +168,14 @@
     <Compile Include="Controllers\ImageFormatController.cs" />
     <Compile Include="Controllers\SoundFormatController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\UserValidateController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\UserCaptchaModel.cs" />
+    <Compile Include="Models\UserValidateModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -311,6 +314,7 @@
     <Content Include="Views\Captcha\Create.cshtml" />
     <Content Include="Views\Captcha\Edit.cshtml" />
     <Content Include="Views\Captcha\Delete.cshtml" />
+    <Content Include="Views\UserValidate\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

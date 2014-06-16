@@ -1,0 +1,29 @@
+﻿@model CaptchaManager.Models.UserValidateModel
+@{
+    ViewBag.Title = "autenticacion de usuario";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View1</title>
+    
+</head>
+<body>
+
+    <h2>Digite la serial (si es usuario free de click en proceder)</h2>
+    <div>
+
+        @using (Html.BeginForm()) {   
+     @Html.EditorFor(model => model.SearchUser)
+     <input type="submit" value="proceder" />
+            
+            
+            <img src="@Url.Content("~/Images/1.jpg")" width="500px" height="600px" alt="imgf"/>
+}
+
+    </div>
+</body>
+</html>
