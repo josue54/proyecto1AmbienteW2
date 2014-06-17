@@ -7,6 +7,7 @@ using CaptchaManager.DataAccess;
 using CaptchaManager.Models;
 
 
+
 namespace CaptchaManager.Controllers
 {
     public class UserValidateController : Controller
@@ -34,10 +35,15 @@ namespace CaptchaManager.Controllers
             var captchas = db.captchas.ToList();
             var captchasmodel = new UserCaptchaModel();
             captchasmodel.captchas = captchas;
-
+            Random random = new Random();
+            int place;
             if (String.IsNullOrEmpty(findusers))
             {
+
                 captchasmodel.captchas = db.captchas.Where(x => x.imageComplex.Value == 2).ToList();
+                
+                int randomNumber = random.Next(0,captchasmodel.captchas.Count);
+                place = randomNumber;
             }
             else
             {
@@ -45,9 +51,14 @@ namespace CaptchaManager.Controllers
                 
                 
                 captchasmodel.captchas = db.captchas.Where(x => x.imageComplex.Value==1 ).ToList();
+               
+                int randomNumber = random.Next(0, captchasmodel.captchas.Count);
+                place = randomNumber;
             }
             // return model to the view
-            return View(model);
+            var selectedcaptcha = new CaptchaDisplay();
+            selectedcaptcha.captchas = captchasmodel.captchas[place];
+            return View("CaptchaValidate",selectedcaptcha);
         }
 
 
