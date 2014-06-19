@@ -14,18 +14,18 @@
 <body>
 
     
-    <div>    
+    <div class="hero-unit">    
             <img src="@Url.Content("~/Images/"+@Html.DisplayFor(Model => Model.captchas.image))" width="500px" height="350px" alt="imgf"/>
      </div>
 
-         <
+         
 
-    <div> 
-        h2>Digite el codigo Que Aparece en la imagen correctamente</h2>
+    <div class="hero-unit"> 
+        <h2>Digite el codigo Que Aparece en la imagen correctamente</h2>
         @using (Html.BeginForm("Validate","CaptchaValidate", FormMethod.Post))
            {
               <input name ="userstring" id="userstring" type="text" />
-              <input type="submit" value="Proceder" />
+              <input class="btn btn-primary btn-large" type="submit" value="Proceder" />
             }
     </div>
 
