@@ -163,6 +163,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CaptchaController.cs" />
+    <Compile Include="Controllers\CaptchaValidateController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageComplexController.cs" />
     <Compile Include="Controllers\ImageFormatController.cs" />
@@ -174,7 +175,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\CaptchaDisplay.cs" />
+    <Compile Include="Models\CaptchaDisplayModel.cs" />
+    <Compile Include="Models\UserCaptchaDisplayModel.cs" />
     <Compile Include="Models\UserCaptchaModel.cs" />
     <Compile Include="Models\UserValidateModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -316,7 +318,8 @@
     <Content Include="Views\Captcha\Edit.cshtml" />
     <Content Include="Views\Captcha\Delete.cshtml" />
     <Content Include="Views\UserValidate\index.cshtml" />
-    <Content Include="Views\UserValidate\CaptchaValidate.cshtml" />
+    <Content Include="Views\UserValidate\CaptchaShow.cshtml" />
+    <Content Include="Views\CaptchaValidate\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

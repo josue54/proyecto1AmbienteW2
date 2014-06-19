@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CaptchaManager.Models
 {
-    public class CaptchaDisplay
+    public class CaptchaDisplayModel
     {
         public string SelectCaptcha { get; set; }
 

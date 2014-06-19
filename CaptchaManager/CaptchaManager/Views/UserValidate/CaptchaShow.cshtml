@@ -1,0 +1,39 @@
+﻿@model CaptchaManager.Models.CaptchaDisplayModel
+@{
+    ViewBag.Title = "autenticacion de captcha";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View1</title>
+    
+</head>
+<body>
+
+    
+    <div>
+
+         @using (Html.BeginForm("Validate","CaptchaValidate", FormMethod.Post))
+         {
+          <fieldset>
+              <legend>Digite el Captcha de la imagen Correctamente</legend>
+              <input name ="userstring" id="userstring" type="text" />
+              <input type="submit" value="Proceder" />
+              </fieldset>  
+             
+         }
+     
+
+          <h2> @Html.DisplayFor(Model => Model.captchas.image);</h2> 
+       
+            
+            <img src="@Url.Content("~/Images/1.jpg")" width="500px" height="600px" alt="imgf"/>
+
+
+    </div>
+</body>
+</html>
+

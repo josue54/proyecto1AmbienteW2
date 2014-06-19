@@ -56,9 +56,10 @@ namespace CaptchaManager.Controllers
                 place = randomNumber;
             }
             // return model to the view
-            var selectedcaptcha = new CaptchaDisplay();
+            var selectedcaptcha = new CaptchaDisplayModel();
             selectedcaptcha.captchas = captchasmodel.captchas[place];
-            return View("CaptchaValidate",selectedcaptcha);
+            return View("CaptchaShow",selectedcaptcha);
+            
         }
 
 
