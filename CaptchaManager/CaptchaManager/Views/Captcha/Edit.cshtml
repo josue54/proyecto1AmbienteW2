@@ -5,6 +5,7 @@
 }
 
 <h2>Edit</h2>
+ <div class="hero-unit">   
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
@@ -59,8 +60,9 @@
         </p>
     </fieldset>
 }
+     </div>
 
-<div>
+ <div class="hero-unit">   
     @Html.ActionLink("Back to List", "Index")
 </div>
 

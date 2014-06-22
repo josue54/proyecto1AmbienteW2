@@ -26,14 +26,15 @@ namespace CaptchaManager.Controllers
             model.captchas = captchas;
 
 
-            if (String.IsNullOrEmpty(searchstring))
-            {
+            
 
                 model.captchas = db.captchas.Where(x => x.image == searchstring).ToList();
-                return View("error");
-                
                
-            }
+                
+             if(model.captchas.Count==0){
+                 return View("error");
+             }
+            
             else
             {
                 return View("index");

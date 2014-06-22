@@ -5,7 +5,7 @@
 }
 
 <h2>Create</h2>
-
+<div class="hero-unit">   
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
 
@@ -21,12 +21,13 @@
         </div>
 
         <p>
-            <input type="submit" value="Create" />
+            <input class="btn btn-primary btn-large" type="submit" value="Create" />
         </p>
     </fieldset>
 }
+    </div>
 
-<div>
+<div class="hero-unit">   
     @Html.ActionLink("Back to List", "Index")
 </div>
 

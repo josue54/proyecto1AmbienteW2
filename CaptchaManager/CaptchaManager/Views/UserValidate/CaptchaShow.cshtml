@@ -15,11 +15,11 @@
       
     
     <div class="hero-unit">    
-            <img src="@Url.Content("~/Images/"+@Html.DisplayFor(Model => Model.captchas.image))" width="500px" height="350px" alt="imgf"/>
+            <img align="center" src="@Url.Content("~/Images/"+@Html.DisplayFor(Model => Model.captchas.image))" width="500px" height="350px" alt="imgf"/>
      </div>
 
-    <audio controls>
-  <source src="@Url.Content("~/Images/"+@Html.DisplayFor(Model => Model.captchas.sound))" type="audio/wav">
+    <audio controls align="center">
+  <source  src="@Url.Content("~/Images/"+@Html.DisplayFor(Model => Model.captchas.sound))" type="audio/wav">
   Your browser does not support the audio element.
     </audio>
 

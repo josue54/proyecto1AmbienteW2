@@ -5,7 +5,7 @@
 }
 
 <h2>Details</h2>
-
+<div class="hero-unit">   
 <fieldset>
     <legend>soundsFormat</legend>
 
@@ -16,7 +16,11 @@
         @Html.DisplayFor(model => model.description)
     </div>
 </fieldset>
+    </div>
+
+<div class="hero-unit">   
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+    </div>
