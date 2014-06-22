@@ -8,15 +8,20 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>View1</title>
-    
+    <title>Digite el Captcha</title>
 </head>
-<body>
 
+<body>
+      
     
     <div class="hero-unit">    
             <img src="@Url.Content("~/Images/"+@Html.DisplayFor(Model => Model.captchas.image))" width="500px" height="350px" alt="imgf"/>
      </div>
+
+    <audio controls>
+  <source src="@Url.Content("~/Images/"+@Html.DisplayFor(Model => Model.captchas.sound))" type="audio/wav">
+  Your browser does not support the audio element.
+    </audio>
 
          
 

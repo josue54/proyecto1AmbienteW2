@@ -10,10 +10,11 @@ namespace CaptchaManager.Controllers
     {
         //
         // GET: /CaptchaValidate/
-
+        [HttpPost]
         public ActionResult Validate(String UserString)
         {
-            return View();
+            string x = UserString;
+            return View("index");
         }
 
     }
