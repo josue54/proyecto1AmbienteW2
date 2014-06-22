@@ -7,31 +7,26 @@
  @Styles.Render("~/Content/bootstrapcss")
 </head>
 <body>
- <div class="container-fluid">
- <div class="row-fluid">
- <div class="span3">
- <div class="well sidebar-nav">
- <ul class="nav nav-list">
- <li class="nav-header">1st Navigation Header</li>
- <li>@Html.ActionLink("Link 1","../")</li>
- <li>@Html.ActionLink("Link 2","../")</li>
- <li>@Html.ActionLink("Link 3","../")</li>
- <li>@Html.ActionLink("Link 4","../")</li>
- <li class="nav-header">2nd Navigation Header</li>
- <li>@Html.ActionLink("Link AA","../")</li>
- <li>@Html.ActionLink("Link BB","../")</li>
- <li>@Html.ActionLink("Link CC","../")</li>
- </ul>
- </div>
- </div>
- <div class="span9">
+ 
+    <ul class="nav nav-pills">
+    <li>@Html.ActionLink("Validar Usuario","index","uservalidate")</li>
+  
+    
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Mantenimientos <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>@Html.ActionLink("Agregar/Editar/borrar Captchas","index","captcha")</li>
+        </ul>
+    </li>
+    
+</ul>
+    
+  
+   
+
  @RenderSection("featured", required: false)
- <div class="row-fluid">
  @RenderBody()
- </div>
- </div>
- </div>
- </div>
+ 
  @Scripts.Render("~/bundles/jquery")
  @Scripts.Render("~/bundles/bootstrapjs")
 </body>
