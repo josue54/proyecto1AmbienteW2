@@ -1,0 +1,40 @@
+﻿@model CaptchaManager.Models.SearchModel
+@{
+    ViewBag.Title = "Busqueda de Audios";
+}
+
+<h2>Busqueda de Audios</h2>
+
+@using (Html.BeginForm()) {   
+     @Html.EditorFor(model => model.SearchText)
+     <input type="submit" value="Buscar" />
+}
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td style="font-weight:bold">
+                Imagen
+            </td>
+
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach(var item in Model.captchas){
+        <tr>
+            <td>
+                 @Html.DisplayFor(modelItem => item.image)
+            </td>
+
+            <td>
+                <audio controls>
+                <source src="@Url.Content("~/Images/"+@Html.DisplayFor(modelItem => item.sound))" type="audio/wav">
+                Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>   
+}
+    </tbody>
+</table>

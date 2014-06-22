@@ -9,16 +9,28 @@
 <body>
  
     <ul class="nav nav-pills">
-    <li>@Html.ActionLink("Validar Usuario","index","uservalidate")</li>
+    <li>@Html.ActionLink("Descargar Archivo","index","uservalidate")</li>
   
     
     <li class="dropdown">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle">Mantenimientos <b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li>@Html.ActionLink("Agregar/Editar/borrar Captchas","index","captcha")</li>
+             <li>@Html.ActionLink("Agregar/Editar/borrar Usuarios","index","user")</li>
+             <li>@Html.ActionLink("Agregar/Editar/borrar Formatos De Imagen","index","imageformat")</li>
+             <li>@Html.ActionLink("Agregar/Editar/borrar Formatos Sonido","index","soundformat")</li>
+             <li>@Html.ActionLink("Agregar/Editar/borrar Complejidades de Imagen","index","imagecomplex")</li>
         </ul>
     </li>
-    
+
+     <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Filtros <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>@Html.ActionLink("Buscar Captchas","index","searchcaptcha")</li>
+             <li>@Html.ActionLink("Buscar Sonidos","index","searchsound")</li>
+             
+        </ul>
+    </li>
 </ul>
     
   

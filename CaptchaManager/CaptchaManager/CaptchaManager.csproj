@@ -167,6 +167,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageComplexController.cs" />
     <Compile Include="Controllers\ImageFormatController.cs" />
+    <Compile Include="Controllers\SearchCaptchaController.cs" />
+    <Compile Include="Controllers\SearchSoundController.cs" />
     <Compile Include="Controllers\SoundFormatController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\UserValidateController.cs" />
@@ -176,6 +178,8 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\CaptchaDisplayModel.cs" />
+    <Compile Include="Models\SearchModel.cs" />
+    <Compile Include="Models\SearchSoundModel.cs" />
     <Compile Include="Models\UserCaptchaDisplayModel.cs" />
     <Compile Include="Models\UserCaptchaModel.cs" />
     <Compile Include="Models\UserValidateModel.cs" />
@@ -272,6 +276,9 @@
     <Content Include="Views\UserValidate\index.cshtml" />
     <Content Include="Views\UserValidate\CaptchaShow.cshtml" />
     <Content Include="Views\CaptchaValidate\index.cshtml" />
+    <Content Include="Views\SearchCaptcha\Index.cshtml" />
+    <Content Include="Views\SearchSound\index.cshtml" />
+    <Content Include="Views\CaptchaValidate\error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

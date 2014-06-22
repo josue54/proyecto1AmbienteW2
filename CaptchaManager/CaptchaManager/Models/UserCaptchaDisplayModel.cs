@@ -7,8 +7,8 @@ namespace CaptchaManager.Models
 {
     public class UserCaptchaDisplayModel
     {
-        public string UserIntroducedCaptcha { get; set; }
+        public string SelectCaptcha { get; set; }
 
-        public String captcha { get; set; }
+        public CaptchaManager.DataAccess.captchas captchas { get; set; }
     }
 }

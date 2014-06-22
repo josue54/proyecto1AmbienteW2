@@ -27,11 +27,14 @@
 
     <div class="hero-unit"> 
         <h2>Digite el codigo Que Aparece en la imagen correctamente</h2>
-        @using (Html.BeginForm("Validate","CaptchaValidate", FormMethod.Post))
-           {
+        @using (Html.BeginForm("Validate", "CaptchaValidate", FormMethod.Post))
+        {
+              
               <input name ="userstring" id="userstring" type="text" />
               <input class="btn btn-primary btn-large" type="submit" value="Proceder" />
-            }
+               
+        }
+
     </div>
 
 </body>
